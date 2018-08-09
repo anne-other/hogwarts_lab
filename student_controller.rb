@@ -18,6 +18,6 @@ end
 #CREATE
 post '/students' do
   @student = Student.new(params)
-  @studnet.save()
+  @student.save()
   erb (:create)
 end
