@@ -11,6 +11,13 @@ get '/students' do
 end
 
 #NEW
-get '/student/new' do
+get '/students/new-student' do
   erb (:new)
+end
+
+#CREATE
+post '/students' do
+  @student = Student.new(params)
+  @studnet.save()
+  erb (:create)
 end
